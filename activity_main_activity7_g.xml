@@ -1,0 +1,142 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#14213D"
+    android:padding="16dp">
+
+    <!-- Existing LinearLayout for images and buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Left side for sign language images -->
+        <LinearLayout
+            android:layout_width="166dp"
+            android:layout_height="524dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:contentDescription="Sign Language Image 1"
+                android:src="@drawable/gpha"/>
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:contentDescription="Sign Language Image 2"
+                android:src="@drawable/gshra" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:contentDescription="Sign Language Image 3"
+                android:src="@drawable/gada"/>
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:contentDescription="Sign Language Image 4"
+                android:src="@drawable/gbha"/>
+
+        </LinearLayout>
+
+        <!-- Right side for jumbled alphabets -->
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="524dp"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonA"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/fancy_button"
+                android:text="ક્ષ"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/buttonB"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="50dp"
+                android:background="@drawable/fancy_button"
+                android:layout_marginTop="85dp"
+                android:layout_marginBottom="0dp"
+                android:text="ભ"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/buttonC"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="50dp"
+                android:background="@drawable/fancy_button"
+                android:layout_marginTop="85dp"
+                android:layout_marginBottom="0dp"
+                android:text="ફ"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/buttonD"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="50dp"
+                android:background="@drawable/fancy_button"
+                android:layout_marginTop="85dp"
+                android:layout_marginBottom="0dp"
+                android:text="ઙ"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Timer TextView placed within the FrameLayout, position it accordingly -->
+    <TextView
+        android:id="@+id/timerTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="9dp"
+        android:text="સમય:"
+        android:textColor="#E5E5E5"
+        android:textSize="20sp" />
+
+    <!-- New ImageView positioned at the bottom right -->
+    <ImageView
+        android:id="@+id/newImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:contentDescription="New Image"
+        android:src="@drawable/hi" />
+    <com.example.signconnect.Custom
+        android:id="@+id/lineView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+
+</FrameLayout>

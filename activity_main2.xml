@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#14213D"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+    <!-- Circular profile image at the top right -->
+    <ImageView
+        android:id="@+id/circularImageView"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/oval"
+        android:clipToOutline="true"
+        android:contentDescription="Profile Image"
+        tools:srcCompat="@drawable/b" />
+
+    <!-- Title text for language selection -->
+    <TextView
+        android:id="@+id/textViewLanguageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="8dp"
+        android:text="Which language do you want to choose?"
+        android:textAlignment="center"
+        android:textColor="#E5E5E5"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewLanguageTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewLanguageTitle"
+        android:text="તમે કઈ ભાષા પસંદ કરવા માંગો છો?"
+        android:textAlignment="center"
+        android:textColor="#E5E5E5"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- Button for English language selection -->
+    <Button
+        android:id="@+id/btnEnglish"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textViewLanguageTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/fancy_button"
+        android:text="English"
+        android:textColor="#14213D"
+        android:textStyle="bold"
+        android:elevation="4dp"
+        android:layout_gravity="center" />
+
+    <!-- Button for Gujarati language selection -->
+    <Button
+        android:id="@+id/btnGujarati"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnEnglish"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/fancy_button"
+        android:elevation="4dp"
+        android:text="ગુજરાતી"
+        android:textColor="#14213D"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Back/LogOut button at the bottom left -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/back_button"
+        android:text="LogOut"
+        android:textColor="#14213D"
+        android:textStyle="bold"
+        android:elevation="4dp"
+        android:layout_gravity="start" />
+
+</RelativeLayout>

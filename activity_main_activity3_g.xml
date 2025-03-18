@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#14213D"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/circularImageView1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/oval"
+        tools:srcCompat="@drawable/b"
+        android:clipToOutline="true" />
+
+    <Button
+        android:id="@+id/btnLearn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/fancy_button"
+        android:elevation="8dp"
+        android:text="અભ્યાસ"
+        android:textColor="#14213D"
+        android:textSize="18sp"
+        android:paddingVertical="16dp" />
+
+    <Button
+        android:id="@+id/btnGame1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLearn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/fancy_button"
+        android:elevation="8dp"
+        android:text="વિજ્ઞાન વિક્રમ "
+        android:textColor="#14213D"
+        android:textSize="18sp"
+        android:paddingVertical="16dp" />
+
+    <Button
+        android:id="@+id/btnGame2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnGame1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/fancy_button"
+        android:elevation="8dp"
+        android:text="જોડી જોડો"
+        android:textColor="#14213D"
+        android:textSize="18sp"
+        android:paddingVertical="16dp"/>
+
+    <Button
+        android:id="@+id/btnGame3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnGame2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/fancy_button"
+        android:elevation="8dp"
+        android:text="ગેમ 3"
+        android:textColor="#14213D"
+        android:textSize="18sp"
+        android:paddingVertical="16dp"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnGame3"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/back_button"
+        android:elevation="4dp"
+        android:text="પાછળ"
+        android:textColor="#14213D"
+        android:textSize="16sp" />
+
+</RelativeLayout>

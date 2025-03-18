@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#14213D"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+    <!-- Circular profile image at the top right -->
+    <ImageView
+        android:id="@+id/circularImageView8"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/oval"
+        android:clipToOutline="true"
+        android:contentDescription="Profile Image"
+        tools:srcCompat="@drawable/b" />
+
+    <!-- Title text for language selection -->
+    <TextView
+        android:id="@+id/textViewLanguageTitle8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="What do you want to learn?"
+        android:textAlignment="center"
+        android:textColor="#E5E5E5"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Button for English language selection -->
+    <Button
+        android:id="@+id/btnAlpha"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textViewLanguageTitle8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/fancy_button"
+        android:text="Alphabets"
+        android:textColor="#14213D"
+        android:textStyle="bold"
+        android:elevation="4dp"
+        android:layout_gravity="center" />
+
+    <!-- Button for Gujarati language selection -->
+    <Button
+        android:id="@+id/btnNumbers"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnAlpha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/fancy_button"
+        android:text="Numbers"
+        android:textColor="#14213D"
+        android:textStyle="bold"
+        android:elevation="4dp"
+        android:layout_gravity="center" />
+
+    <!-- Back/LogOut button at the bottom left -->
+    <Button
+        android:id="@+id/btnBack8"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/back_button"
+        android:text="Back"
+        android:textColor="#14213D"
+        android:textStyle="bold"
+        android:elevation="4dp"
+        android:layout_gravity="start" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnNumbers"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/fancy_button"
+        android:text="Text to Speech"
+        android:textColor="#14213D"
+        android:textStyle="bold"
+        android:elevation="4dp"
+        android:layout_gravity="center" />
+
+</RelativeLayout>
