@@ -31,8 +31,6 @@ Android (Java/Kotlin)
 
 XML for UI design
 
-SQLite for data storage (if applicable)
-
 Google Speech-to-Text API (for speech recognition)
 
 🎓 Target Audience
